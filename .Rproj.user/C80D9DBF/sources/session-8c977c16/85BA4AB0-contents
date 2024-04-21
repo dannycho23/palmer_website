@@ -5,6 +5,8 @@ website:
   title: "Palmer Penguin Website"
   navbar:
     left:
+      - href: about.qmd
+        text: Palmer Penguin Website
       - href: eda.qmd
         text: EDA
       - href: model.qmd

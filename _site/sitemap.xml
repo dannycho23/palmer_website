@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dannycho23.github.io/palmer_website/eda.html</loc>
-    <lastmod>2024-04-21T05:39:35.745Z</lastmod>
+    <loc>https://dannycho23.github.io/palmer_website/about.html</loc>
+    <lastmod>2024-04-21T06:00:57.415Z</lastmod>
   </url>
   <url>
     <loc>https://dannycho23.github.io/palmer_website/model.html</loc>
     <lastmod>2024-04-21T05:36:41.834Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dannycho23.github.io/palmer_website/eda.html</loc>
+    <lastmod>2024-04-21T05:39:35.745Z</lastmod>
   </url>
 </urlset>
