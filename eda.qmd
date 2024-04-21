@@ -43,6 +43,15 @@ df %>%
   geom_boxplot() +
   labs(title = "Body Mass by Species and Sex")
 
+# Density plots for bill length by species and sex
+df %>%
+  ggplot(aes(x = bill_length_mm, fill = interaction(species, sex), alpha = 0.5)) +
+  geom_density() +
+  labs(title = "Density Plot of Bill Length by Species and Sex", x = "Bill Length (mm)", y = "Density") +
+  scale_fill_brewer(palette = "Set1") +  # Color palette for better distinction
+  theme_minimal() +
+  guides(fill = guide_legend(title = "Species and Sex"))  # Add legend title
+
 # Disconnect from the database
 DBI::dbDisconnect(con)
 
