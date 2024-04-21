@@ -1,0 +1,233 @@
+"0","from palmerpenguins import penguins"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'palmerpenguins'
+"
+"0","from pandas import get_dummies"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'pandas'
+"
+"0","import numpy as np"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'numpy'
+"
+"0","from sklearn.linear_model import LinearRegression"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sklearn'
+"
+"0","from sklearn import preprocessing"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'sklearn'
+"
+"0","import duckdb"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'duckdb'
+"
+"0","from palmerpenguins import penguins"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'palmerpenguins'
+"
+"0","con = duckdb.connect('my-db.duckdb')"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'duckdb' is not defined
+"
+"0","df = con.execute(""SELECT * FROM penguins"").fetchdf().dropna()"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'con' is not defined
+"
+"0","df.head(3)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'df' is not defined
+"
+"0","X = get_dummies(df[['bill_length_mm', 'species', 'sex']], drop_first = True)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'get_dummies' is not defined
+"
+"0","y = df['body_mass_g']"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'df' is not defined
+"
+"0","model = LinearRegression().fit(X, y)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'LinearRegression' is not defined
+"
+"0","print(f""R^2 {model.score(X,y)}"")"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'model' is not defined
+"
+"0","print(f""Intercept {model.intercept_}"")"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'model' is not defined
+"
+"0","print(f""Columns {X.columns}"")"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'X' is not defined
+"
+"0","print(f""Coefficients {model.coef_}"")"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'model' is not defined
+"
+"0","from vetiver import VetiverModel"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'vetiver'
+"
+"0","v = VetiverModel(model, model_name = 'penguin_model', prototype_data = X)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'VetiverModel' is not defined
+"
+"0","from pins import board_folder"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'pins'
+"
+"0","from vetiver import vetiver_pin_write"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'vetiver'
+"
+"0","b = board_folder('data/model', allow_pickle_read = True)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'board_folder' is not defined
+"
+"0","vetiver_pin_write(b, v)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'vetiver_pin_write' is not defined
+"
+"0","from vetiver import VetiverAPI"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+  File ""[90m]8;line = 122;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 122, in _find_and_load_hook
+    return _run_hook(name, _hook)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File ""[90m]8;line = 96;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 96, in _run_hook
+    module = hook()
+             ^^^^^^
+  File ""[90m]8;line = 120;file:///Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py/Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library/reticulate/python/rpytools/loader.py]8;;[39m"", line 120, in _hook
+    return _find_and_load(name, import_)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'vetiver'
+"
+"0","app = VetiverAPI(v, check_prototype = True)"
+"2","Traceback (most recent call last):
+  File ""<string>"", line 1, in <module>
+NameError: name 'VetiverAPI' is not defined
+"
