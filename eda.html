@@ -297,6 +297,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><strong>Organize and Orient:</strong> The Palmer Penguins are now organized by species and sex (NA in instances where sex data was not available), so that data on bill length, bill depth, flipper length, and body mass can be seen for each species/sex combination.</p>
 <hr>
+<center>
+<span style="font-size: 24px;"><strong>Body Mass Explained by Bill Length</strong></span>
+</center>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -316,6 +319,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><strong>Bigger Bills, Bigger Body:</strong> Applying a linear regression to the Penguins’ body mass explained by bill length suggests a positive correlation. There are, however, a few odd ducks in there with disproportionately large bills. Poor fellas. I wonder if they struggle with balance issues.</p>
 <hr>
+<center>
+<span style="font-size: 24px;"><strong>Flipper Length By Species</strong></span>
+</center>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -335,14 +341,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p><strong>The Gentoos Are Fillin’ Their Socks:</strong> Using a histogram to visualize the distribution of flipper lengths by species lends some insight as to how flipper lengths might be useful in predicting the penguin species. So far we’ve got a general trend of relatively larger Gentoos (with respect to body mass and flipper size) and relatively smaller Chinstraps and Adélies. As of now, it looks like the Gentoos won’t be joining the Chinstraps and Adélies in their bulk order of Chinstrap/Adélie-sized penguin shoes.</p>
 <hr>
+<center>
+<span style="font-size: 24px;">*Body Mass by Species and Sex**</span>
+</center>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plots for body mass by species and sex</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> species, <span class="at">y =</span> body_mass_g, <span class="at">fill =</span> sex)) <span class="sc">+</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Body Mass by Species and Sex"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -352,6 +360,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p><strong>The Dudes Are Taking Up Too Much Space:</strong> The box plots seem to be suggesting that on average, the male penguins are larger in body mass compared to the females. Interestingly, I’m compelled to believe that most of the penguins with unidentified genders are females. Sneaky, sneaky.</p>
+<hr>
+<center>
+<span style="font-size: 24px;">*Bill Length by Species and Sex**</span>
+</center>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -359,7 +372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">fill =</span> <span class="fu">interaction</span>(species, sex), <span class="at">alpha =</span> <span class="fl">0.5</span>)) <span class="sc">+</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Density Plot of Bill Length by Species and Sex"</span>, <span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>, <span class="at">y =</span> <span class="st">"Density"</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>, <span class="at">y =</span> <span class="st">"Density"</span>) <span class="sc">+</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_brewer</span>(<span class="at">palette =</span> <span class="st">"Set1"</span>) <span class="sc">+</span>  <span class="co"># Color palette for better distinction</span></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="fu">guide_legend</span>(<span class="at">title =</span> <span class="st">"Species and Sex"</span>))  <span class="co"># Add legend title</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -371,6 +384,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
+</div>
+<p><strong>The Dudes Also Just Be Talking:</strong> Corroborating some of the data explored above on bill length, we see that the Chinstraps and Gentoos have similarly longer bills, with Adélies slightly smaller. Male penguins also, apparently, have consistently bigger mouths than their female counterparts. Do male penguins also mansplain? Penguin-splain? I don’t know.</p>
+<hr>
+<div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Disconnect from the database</span></span>
