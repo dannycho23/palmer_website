@@ -53,7 +53,7 @@
     "href": "model.html#save-to-board",
     "title": "Model",
     "section": "Save to Board",
-    "text": "Save to Board\n\n\nCode\nfrom IPython.utils.io import capture_output\n\nwith capture_output(stdout=True, stderr=True, display=False):\n  \n  from pins import board_folder\n  from vetiver import vetiver_pin_write\n\n  model_board = board_folder(\"./data/model\", allow_pickle_read = True)\n  vetiver_pin_write(model_board, v)"
+    "text": "Save to Board\n\n\nCode\nfrom IPython.utils.io import capture_output\n\nwith capture_output(stdout=True, stderr=True, display=False):\n  from pins import board_folder\n  from vetiver import vetiver_pin_write\n\n  model_board = board_folder(\"./data/model\", allow_pickle_read = True)\n  vetiver_pin_write(model_board, v)"
   },
   {
     "objectID": "model.html#turn-model-into-api",
