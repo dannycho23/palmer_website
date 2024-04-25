@@ -293,6 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p><strong>Organize and Orient:</strong> The Palmer Penguins are now organized by species and sex (NA in instances where sex data was not available), so that data on bill length, bill depth, flipper length, and body mass can be seen for each species/sex combination.</p>
+<hr>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -310,7 +311,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p><strong>Bigger Bills, Bigger Body:</strong> Applying a linear regression to the Penguins’ body mass explained by bill length suggests a positive correlation. There are a few odd ducks in there with relatively disproportionately sized bills. Poor fellas. I wonder if they struggle with balance issues.</p>
+<p><strong>Bigger Bills, Bigger Body:</strong> Applying a linear regression to the Penguins’ body mass explained by bill length suggests a positive correlation. There are, however, a few odd ducks in there with disproportionately large bills. Poor fellas. I wonder if they struggle with balance issues.</p>
+<hr>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -327,6 +329,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </figure>
 </div>
 </div>
+</div>
+<p><strong>The Gentoos Are Fillin’ Their Socks:</strong> Using a histogram to visualize the distribution of flipper lengths by species lends some insight as to how flipper lengths might be useful in predicting the penguin species. So far we’ve got a general trend of relatively larger Gentoos (with respect to body mass and flipper size) and relatively smaller Chinstraps and Adélies. As of now, it looks like the Gentoos won’t be joining the Chinstraps and Adélies in their bulk order of Chinstrap/Adélie-sized penguin shoes.</p>
+<hr>
+<div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Box plots for body mass by species and sex</span></span>
@@ -338,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="eda_files/figure-html/unnamed-chunk-4-2.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="eda_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -356,7 +362,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="eda_files/figure-html/unnamed-chunk-4-3.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="eda_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
