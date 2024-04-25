@@ -10,5 +10,5 @@
 
 /* Change the navbar text color on hover */
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #8a3203; /* Sets the hover color to tomato red; replace with your color */
+    color: #8a3203; 
 }
