@@ -18,7 +18,7 @@
     color: #8a3203;
 }
 
-/* Change the navbar text color on visited */
+/* Change the navbar text color on brand */
 .navbar:brand {
     color: white;
 }
