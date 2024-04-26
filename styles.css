@@ -14,11 +14,16 @@
 }
 
 /* Change the navbar text color on visited */
-.nav-link:visited {
+.nav-link:active {
     color: #8a3203;
 }
 
 /* Change the navbar text color on brand */
 .navbar-brand {
     color: white;
+}
+
+/* Change the navbar text color on brand hover */
+.navbar-brand:hover {
+    color: #8a3203;
 }
