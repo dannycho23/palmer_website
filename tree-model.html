@@ -178,9 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<center>
-<span style="font-size: 27px;"><strong>Load packages</strong></span>
-</center>
+<p><span style="font-size: 27px;"><strong>Load packages</strong></span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -192,9 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dbplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<center>
-<span style="font-size: 27px;"><strong>Prepare the data</strong></span>
-</center>
+<p><span style="font-size: 27px;"><strong>Prepare the data</strong></span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -206,9 +202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>penguins_test <span class="ot">&lt;-</span> <span class="fu">testing</span>(penguins_split)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<center>
-<span style="font-size: 27px;"><strong>Declare and fit the model</strong></span>
-</center>
+<p><span style="font-size: 27px;"><strong>Declare and fit the model</strong></span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -222,9 +216,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_formula</span>(body_mass_g <span class="sc">~</span> species <span class="sc">+</span> sex <span class="sc">+</span> bill_length_mm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<center>
-<span style="font-size: 27px;"><strong>Set up cross-validation and grid</strong></span>
-</center>
+<p><span style="font-size: 27px;"><strong>Set up cross-validation and grid</strong></span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -234,9 +226,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>param_grid <span class="ot">&lt;-</span> <span class="fu">grid_regular</span>(<span class="fu">cost_complexity</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<center>
-<span style="font-size: 27px;"><strong>Tune the model</strong></span>
-</center>
+<p><span style="font-size: 27px;"><strong>Tune the model</strong></span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -244,9 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>tune_res <span class="ot">&lt;-</span> <span class="fu">tune_grid</span>(reg_tree_wf, <span class="at">resamples =</span> penguins_folds, <span class="at">grid =</span> param_grid)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<center>
-<span style="font-size: 27px;"><strong>Select the best model and visualize</strong></span>
-</center>
+<p><span style="font-size: 27px;"><strong>Select the best model and visualize</strong></span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -265,9 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <center>
 <img src="images/Tree-Based Model.png" title="Tree Based Model" style="width:120.0%;height:120.0%">
 </center>
-<center>
-<span style="font-size: 27px;"><strong>Evaluate the model</strong></span>
-</center>
+<p><span style="font-size: 27px;"><strong>Evaluate the model</strong></span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
