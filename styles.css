@@ -14,7 +14,7 @@
 }
 
 /* Change the navbar text color on visited */
-.nav-link:active {
+.nav-link.active {
     color: #8a3203;
 }
 
@@ -27,3 +27,5 @@
 .navbar-brand:hover {
     color: #8a3203;
 }
+ 
+ 
