@@ -19,6 +19,6 @@
 }
 
 /* Change the navbar text color on brand */
-.navbar:brand {
+.navbar-brand {
     color: white;
 }
