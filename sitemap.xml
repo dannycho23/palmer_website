@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dannycho23.github.io/palmer_website/about.html</loc>
-    <lastmod>2024-04-25T07:17:01.284Z</lastmod>
+    <loc>https://dannycho23.github.io/palmer_website/tree-model.html</loc>
+    <lastmod>2024-04-26T01:44:18.503Z</lastmod>
   </url>
   <url>
-    <loc>https://dannycho23.github.io/palmer_website/eda.html</loc>
-    <lastmod>2024-04-25T07:21:06.778Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dannycho23.github.io/palmer_website/model.html</loc>
-    <lastmod>2024-04-25T07:26:31.820Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dannycho23.github.io/palmer_website/flipper-predict.html</loc>
-    <lastmod>2024-04-25T05:37:04.587Z</lastmod>
+    <loc>https://dannycho23.github.io/palmer_website/model-db.html</loc>
+    <lastmod>2024-04-24T13:40:15.343Z</lastmod>
   </url>
   <url>
     <loc>https://dannycho23.github.io/palmer_website/home.html</loc>
     <lastmod>2024-04-25T16:49:48.397Z</lastmod>
   </url>
   <url>
-    <loc>https://dannycho23.github.io/palmer_website/model-db.html</loc>
-    <lastmod>2024-04-24T13:40:15.343Z</lastmod>
+    <loc>https://dannycho23.github.io/palmer_website/flipper-predict.html</loc>
+    <lastmod>2024-04-25T05:37:04.587Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dannycho23.github.io/palmer_website/model.html</loc>
+    <lastmod>2024-04-25T07:26:31.820Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dannycho23.github.io/palmer_website/eda.html</loc>
+    <lastmod>2024-04-25T07:21:06.778Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dannycho23.github.io/palmer_website/about.html</loc>
+    <lastmod>2024-04-25T07:17:01.284Z</lastmod>
   </url>
 </urlset>
