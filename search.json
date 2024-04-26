@@ -2,9 +2,9 @@
   {
     "objectID": "tree-model.html",
     "href": "tree-model.html",
-    "title": "Danny's Penguin Emporium",
+    "title": "Tree-Based Model",
     "section": "",
-    "text": "library(palmerpenguins)\nlibrary(tidyverse)\nlibrary(tidymodels)\nlibrary(rpart.plot )\nlibrary(dplyr)\nlibrary(dbplyr)\n\n# Prepare the data\npenguins &lt;- drop_na(penguins)\nset.seed(37)  \npenguins_split &lt;- initial_split(penguins, prop = 0.80, strata = bill_length_mm)\npenguins_train &lt;- training(penguins_split)  \npenguins_test &lt;- testing(penguins_split)\n\n# Define and fit the model\nregtree_spec &lt;- decision_tree(mode = \"regression\") %&gt;%      \n  set_engine(\"rpart\") %&gt;%\n  set_args(cost_complexity = tune())\n\nreg_tree_wf &lt;- workflow() %&gt;%\n  add_model(regtree_spec) %&gt;%\n  add_formula(body_mass_g ~ species + sex + bill_length_mm)\n\n# Set up cross-validation and grid\nset.seed(747)  \npenguins_folds &lt;- vfold_cv(penguins_train, v = 5, strata = species)\nparam_grid &lt;- grid_regular(cost_complexity())\n\n# Tune the model\ntune_res &lt;- tune_grid(reg_tree_wf, resamples = penguins_folds, grid = param_grid)\n\n# Select the best model and finalize\nbest_complexity &lt;- select_best(tune_res, metric = \"rmse\")\nreg_tree_final &lt;- finalize_workflow(reg_tree_wf, best_complexity)\nreg_tree_final_fit &lt;- fit(reg_tree_final, data = penguins_train) \n\n# Visualize the decision tree\nreg_tree_final_fit %&gt;%\n  extract_fit_engine() %&gt;%\n  rpart.plot(roundint = FALSE)\n\n\n\n\n\n\n\n\n\n# Evaluate the model on the test set\nresults &lt;- augment(reg_tree_final_fit, new_data = penguins_test)\nmetrics &lt;- metric_set(rmse, rsq)\nevaluation &lt;- metrics(results, truth = body_mass_g, estimate = .pred)\nevaluation\n\n# A tibble: 2 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rmse    standard     300.   \n2 rsq     standard       0.856"
+    "text": "Code\n# Evaluate the model on the test set\nresults &lt;- augment(reg_tree_final_fit, new_data = penguins_test)\nmetrics &lt;- metric_set(rmse, rsq)\nevaluation &lt;- metrics(results, truth = body_mass_g, estimate = .pred)\nevaluation\n\n\n# A tibble: 2 × 3\n  .metric .estimator .estimate\n  &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;\n1 rmse    standard     300.   \n2 rsq     standard       0.856"
   },
   {
     "objectID": "model-db.html",
@@ -51,56 +51,56 @@
   {
     "objectID": "model.html",
     "href": "model.html",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "",
     "text": "Code\nfrom palmerpenguins import penguins\nfrom pandas import get_dummies\nimport numpy as np\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn import preprocessing"
   },
   {
     "objectID": "model.html#get-data",
     "href": "model.html#get-data",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "Get Data",
     "text": "Get Data\n\n\nCode\ndf = penguins.load_penguins().dropna()\n\ndf.head(3)\n\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007"
   },
   {
     "objectID": "model.html#define-model-and-fit",
     "href": "model.html#define-model-and-fit",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "Define Model and Fit",
     "text": "Define Model and Fit\n\n\nCode\nX = get_dummies(df[['bill_length_mm', 'species', 'sex']], drop_first = True)\ny = df['body_mass_g']\n\nmodel = LinearRegression().fit(X, y)"
   },
   {
     "objectID": "model.html#get-some-information",
     "href": "model.html#get-some-information",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "Get some information",
     "text": "Get some information\n\n\nCode\nprint(f\"R^2 {model.score(X,y)}\")\nprint(f\"Intercept {model.intercept_}\")\nprint(f\"Columns {X.columns}\")\nprint(f\"Coefficients {model.coef_}\")\n\n\nR^2 0.8555368759537614\nIntercept 2169.26972093939\nColumns Index(['bill_length_mm', 'species_Chinstrap', 'species_Gentoo', 'sex_male'], dtype='object')\nCoefficients [  32.53688677 -298.76553447 1094.86739145  547.36692408]"
   },
   {
     "objectID": "model.html#turn-into-vetiver-model",
     "href": "model.html#turn-into-vetiver-model",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "Turn into Vetiver Model",
     "text": "Turn into Vetiver Model\n\n\nCode\nfrom vetiver import VetiverModel\nv = VetiverModel(model, model_name='penguin_model', prototype_data=X)"
   },
   {
     "objectID": "model.html#save-to-board",
     "href": "model.html#save-to-board",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "Save to Board",
     "text": "Save to Board\n\n\nCode\nfrom IPython.utils.io import capture_output\n\nwith capture_output(stdout=True, stderr=True, display=False):\n  from pins import board_folder\n  from vetiver import vetiver_pin_write\n\n  model_board = board_folder(\"./data/model\", allow_pickle_read = True)\n  vetiver_pin_write(model_board, v)"
   },
   {
     "objectID": "model.html#turn-model-into-api",
     "href": "model.html#turn-model-into-api",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "Turn model into API",
     "text": "Turn model into API\n\n\nCode\nfrom vetiver import VetiverAPI\napp = VetiverAPI(v, check_prototype = True)"
   },
   {
     "objectID": "model.html#creating-dockerfile",
     "href": "model.html#creating-dockerfile",
-    "title": "Model",
+    "title": "Linear Model",
     "section": "Creating Dockerfile",
     "text": "Creating Dockerfile\n\n\nCode\n#from vetiver import prepare_docker\n#prepare_docker(model_board, \"penguin_model\")"
   },
