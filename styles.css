@@ -28,4 +28,9 @@
     color: #8a3203;
 }
  
+.circular {
+    border-radius: 50%;
+    width: 40%;
+    height: auto;
+}
  
